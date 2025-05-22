@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>IMAGDressing</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+		            <h1 class="title is-size-2 publication-title">
+                        IMAGGarment-1: Fine-Grained Garment Generation for Controllable Fashion Design                        
+          </h1>
+
+<!--            <div class="is-size-5 publication-authors">-->
+<!--              &lt;!&ndash; Paper authors &ndash;&gt;-->
+<!--			        <span class="author-block">-->
+<!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author</a>-->
+<!--                  </div>-->
+
+					
+<div class="is-size-5 publication-authors">
+  <span class="author-block">
+    <a href="https://muzishen.github.io/" target="_blank">Fei Shen</a> <sup>1</sup><br>
+  </span>
+  <span class="author-block">
+    <a href="" target="_blank">Jian Yu</a> <sup>1</sup><br>
+  </span>
+
+  <span class="author-block">
+    <a href="https://tenvence.github.io/" target="_blank">Cong Wang</a> <sup>2</sup><br>
+  </span>
+  <span class="author-block">
+    <a href="https://scholar.google.com/citations?user=moDfIyoAAAAJ&hl=en" target="_blank">Xin Jiang</a> <sup>1</sup><br>
+  </span>
+  <span class="author-block">
+   <a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ&hl=en" target="_blank">Xiaoyu Du</a> <sup>1</sup><br>
+  </span>
+ 
+  <span class="author-block">
+    <a href="https://scholar.google.com.hk/citations?user=ByBLlEwAAAAJ&hl=en" target="_blank">Jinhui Tang</a> <sup>1</sup><br>
+  </span>
+</div>
+
+<div class="is-size-5 publication-authors">
+  <span class="author-block"><sup>1</sup> Nanjing University of Science and Technology</span>
+  <span class="author-block"><sup>2</sup> Nanjing University</span>
+</div>
+
+
+
+			  <!--
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+					 <span class="author-block">
+						<a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fourth Author</a>
+                  </span>
+                  </div>
+
+					
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+					-->
+					
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                    <!-- Supplementary PDF link -->
+			
+                    <span class="link-block">
+                      <a href="https://github.com/muzishen/IMAGGarment-1" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+				
+                  <!-- Github link -->
+		
+
+                <!-- ArXiv abstract Link -->
+				<!-- 
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+			    -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
+<!--        <source src="static/videos/banner_video.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End teaser video -->
+
+
+<!-- End paper abstract -->
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+
+          <div class="content has-text-justified">
+            <p>
+                This paper presents IMAGGarment-1, a fine-grained garment generation (FGG) framework that enables high-fidelity garment synthesis with precise control over silhouette, color, and logo placement. 
+                Unlike existing methods that are limited to single-condition inputs, IMAGGarment-1 addresses the challenges of multi-conditional controllability in personalized fashion design and digital apparel applications.
+                Specifically, IMAGGarment-1 employs a two-stage training strategy to separately model global appearance and local details, while enabling unified and controllable generation through end-to-end inference.
+                In the first stage, we propose a global appearance model that jointly encodes silhouette and color using a mixed attention module and a color adapter.
+                In the second stage, we present a local enhancement model with an adaptive appearance-aware module to inject user-defined logos and spatial constraints, enabling accurate placement and visual consistency.
+                To support this task, we release GarmentBench, a large-scale dataset comprising over 180K garment samples paired with multi-level design conditions, including sketches, color references, logo placements, and textual prompts. 
+                Extensive experiments demonstrate that our method outperforms existing baselines, achieving superior structural stability, color fidelity, and local controllability performance. 
+              The code and model will be available at <a href="https://github.com/muzishen/IMAGGarment-1" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment-1</a>.
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+  
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGDressing-v1 Features</title>
+</head>
+<body>
+    <!-- Image carousel -->
+
+    <section class="section">
+      <div class="container is-max-desktop">
+          <!-- Base Version Results -->
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h2 class="title is-3">FGG Task definition</h2>
+                  <div class="container is-max-desktop">
+                      <img src="./static/images/introductionv3-1.png" alt="Image0" style="width: 100%;">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</body> 
+</html>
+    <section class="method">
+        <div class="container is-max-desktop">
+            <!-- Abstract -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Method</h2>
+                    <!-- <div class="content has-text-justified">
+                        <ul>
+                            <li>Simple Architecture: IMAGDressing-v1 produces lifelike garments and enables easy user-driven scene editing.</li>
+                            <li>New Task: Definition of virtual dressing (VD) Task and design a comprehensive affinity metric index (CAMI) metric</li>
+                            <li>Flexible Plugin Compatibility: IMAGDressing-v1 modestly integrates with extension plugins such as IP-Adapter, ControlNet, T2I-Adapter, and AnimateDiff.</li>
+                            <li>Rapid Customization: Enables rapid customization in seconds without the need for additional LoRA training.</li>
+                            <li>GarmentBench Dataset: Release a new interactive garment pairing (GarmentBench) dataset</li>
+                        </ul>
+                    </div> -->
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/architecture.png" alt="Image0" style="width: 100%;">
+                    </div>
+                    <div class="content has-text-justified">
+                    <p>
+                        Our framework comprises two components: a global appearance model (stage I) and a local enhancement model (stage II), which explicitly disentangle and jointly control the global appearance and local details under multi-conditional guidance, enabling accurate synthesis of garment silhouette, color, and logo placement.
+                        The global appearance model first generates a latent of coarse garment image conditioned on the textual prompt, garment silhouette, and color palette. 
+                        Subsequently, the local enhancement model refines this latent representation by integrating user-defined logo and spatial constraint, producing the final high-fidelity garment image with fine-grained controllability.
+                    </p>
+                    </div>
+                    
+            </div>
+            <!--/ Abstract -->
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-max-desktop">
+            
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Example</h2>
+                    
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/introductionv3.png" alt="Image0" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+	
+
+	
+	
+    <!-- End image carousel -->
+<!-- <section class="section">
+        <div class="container is-max-desktop">
+            
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Compared with MagicClothing</h2>
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/compare_magic2.png" alt="Image0" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section class="section">
+        <div class="container is-max-desktop">
+            
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Combined with IP-Adapter</h2>
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/person.png" alt="Image0" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body> 
+</html> -->
+
+      <!--/ Base Version Results. -->
+
+
+
+
+  <!-- <section class="section">
+    <div class="container is-max-desktop">
+
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Combined with IP-Adapter and ControlNet-Pose</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/images/pose1.png" alt="Image0" height="100%">
+          </div>
+        </div>
+      </div>
+    </div> -->
+	
+      <!--/ Pose Control Version Results. -->
+  <!-- </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Support text prompts for different scenes</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/images/different_scenes.png" alt="Image0" height="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </section> -->
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IMAGDressing-v1 Features</title>
+  </head>
+  <body>
+      <!-- Image carousel -->
+  
+      <!-- <section class="section">
+        <div class="container is-max-desktop">
+            
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <h2 class="title is-3">Virtual try-on (VTON) <i>vs</i> virtual dressing (VD)</h2>
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/example.png" alt="Image0" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+  
+    <!-- GarmentBench Dataset Description -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">GarmentBench Dataset Demo</h2>
+            <!-- You can download at <a href="https://huggingface.co/datasets/IMAGDressing/GarmentBench" style="font-weight: bold;">https://huggingface.co/datasets/IMAGDressing/GarmentBench</a><br><br><br><br> -->
+
+            
+            <img src="./static/images/dataset_sample_v4.png" width="96%" height="96%">
+  
+            <div class="content has-text-justified">
+                <h3 class="title is-4">GarmentBench Dataset</h3>
+                <p>
+                    GarmentBench is the first publicly available dataset that includes textual descriptions, sketches, colors, logos and locations. Specifically, GarmentBench includes 189,966 garments. 
+                </p>
+                
+                <h3 class="title is-4">Data Structure</h3>
+                <div class="content has-text-justified">
+                <p>
+                    The dataset includes cloth(in folder'./cloth'),sketch(in folder'./sketch'),logo(in folder'./logo'),mask(in folder'./mask'),color(in folder'./color'),test data(in folder'./test_data'),sketch annotations(in file'./sketch_pair.json'),logo annotations(in file'./logo_pair.json') and color annotations(in file'./.color_pair.json').
+                </p>
+                </div>
+                <p>
+                    Each annotation adheres to the subsequent Parquet format specifications, including column names and corresponding content examples:
+                </p>
+                <pre><code>{
+                    "cloth": "cloth_path",
+                    "sketch": "sketch_path",
+                    "color" : "color_path",
+                    "logo": "logo_path",
+                    "mask": "mask_path",
+                    "caption": "caption"
+  }</code></pre>
+  
+  
+  
+                <h3 class="title is-4">Citation Information</h3>
+                <!-- <pre><code>@article{shen2024IMAGDressing-v1,
+    title={IMAGDressing-v1: Customizable Virtual Dressing},
+    author={Shen, Fei and Jiang, Xin and He, Xin and Ye, Hu and Wang, Cong, and Du, Xiaoyu, Zechao, Li and Tang, Jinhui},
+    booktitle={arXiv preprint arXiv:2407.12705},
+    year={2024}
+  }</code></pre> -->
+            </div>
+        </div>
+    </section>
+  </body>
+  </html>
+  
+
+
+
+
+
+
+ <footer class="footer">
+ <div class="container">
+   <div class="columns is-centered">
+    <div class="column is-8">
+       <div class="content">
+
+     <p>
+      This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+      You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+      Commons Attribution-ShareAlike 4.0 International License</a>.
+     </p>
+
+       </div>
+     </div>
+   </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+ You can add a tracker to track page visits by creating an account at statcounter.com 
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
