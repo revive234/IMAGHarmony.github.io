@@ -401,35 +401,19 @@
     <!-- GarmentBench Dataset Description -->
     <section class="section">
         <div class="container is-max-desktop">
-            <h2 class="title is-3">GarmentBench Dataset Demo</h2>
+            <h2 class="title is-3">HarmonyBench Dataset Demo</h2>
             <!-- You can download at <a href="https://huggingface.co/datasets/IMAGDressing/GarmentBench" style="font-weight: bold;">https://huggingface.co/datasets/IMAGDressing/GarmentBench</a><br><br><br><br> -->
 
             
-            <img src="./static/images/dataset_sample_v4.png" width="96%" height="96%">
+            <img src="./static/images/harmonybench.png" width="96%" height="96%">
   
             <div class="content has-text-justified">
                 <h3 class="title is-4">GarmentBench Dataset</h3>
                 <p>
-                    GarmentBench is the first publicly available dataset that includes textual descriptions, sketches, colors, logos and locations. Specifically, GarmentBench includes 189,966 garments. 
+                    The dataset contains 200 image-caption pairs, systematically organized by object count from 1 to 20, with 10 diverse layout examples per count level to ensure broad coverage of numerical and spatial variations.
                 </p>
                 
-                <h3 class="title is-4">Data Structure</h3>
-                <div class="content has-text-justified">
-                <p>
-                    The dataset includes cloth(in folder'./cloth'),sketch(in folder'./sketch'),logo(in folder'./logo'),mask(in folder'./mask'),color(in folder'./color'),test data(in folder'./test_data'),sketch annotations(in file'./sketch_pair.json'),logo annotations(in file'./logo_pair.json') and color annotations(in file'./.color_pair.json').
-                </p>
-                </div>
-                <p>
-                    Each annotation adheres to the subsequent Parquet format specifications, including column names and corresponding content examples:
-                </p>
-                <pre><code>{
-                    "cloth": "cloth_path",
-                    "sketch": "sketch_path",
-                    "color" : "color_path",
-                    "logo": "logo_path",
-                    "mask": "mask_path",
-                    "caption": "caption"
-  }</code></pre>
+                
   
   
   
