@@ -264,15 +264,15 @@
                     </div>
                     <div class="content has-text-justified">
                     <p>
-                        To address the challenge of controlling object counts and spatial layouts in multi-object image editing, we propose IMAGHarmony, a dedicated framework for the QL-Edit task. As illustrated in Figure, IMAGHarmony is built upon the denoising UNet architecture of frozen Stable Diffusion XL (SDXL), and incorporates the proposed harmony-aware attention (HA). 
+                        To address the challenge of controlling object counts and spatial layouts in multi-object image editing, we propose IMAGHarmony, a dedicated framework for the QL-Edit task.  IMAGHarmony is built upon the denoising UNet architecture of frozen Stable Diffusion XL (SDXL), and incorporates the proposed harmony-aware attention (HA). 
                 Additionally, we present a preference-guided noise selection (PNS) strategy at inference time to enhance structural stability and semantic consistency.
                 Specifically, during training, we first generate multiple initial noise seeds and use SDXL to perform denoising conditioned on the given textual prompt, producing a set of candidate images. 
-                These candidates are then evaluated by a frozen vision-language model (VLM) for semantic alignment, and the top-$k$ scoring images along with their corresponding seeds are selected for further processing. 
+                These candidates are then evaluated by a frozen vision-language model (VLM) for semantic alignment, and the top-k scoring images along with their corresponding seeds are selected for further processing. 
                 The auxiliary text and source image are respectively encoded using frozen text and image encoders to extract conditional text and visual features, which are then fed into the HA module  to obtain harmony feature that explicitly model object count and implicitly capture layout.
                 Subsequently, a learnable IP attention layer is inserted into the "Down4" block of the UNet to inject the harmony feature. 
                 To preserve the generative capability of the original model, we additionally apply cross-attention using a \texttt{“< Null Prompt >”} over the frozen UNet. 
                 During inference, we adopt the PNS strategy  to perform a few denoising steps on the candidate seeds, evaluate their semantic consistency, and ultimately select the optimal noise seed to conduct full denoising, resulting in high-quality edited images that align with the desired object count and spatial layout.
-                Finally, we provide a comprehensive summary of the training and inference strategies implemented in IMAGHarmony (Section \ref{sec:train}).
+                Finally, we provide a comprehensive summary of the training and inference strategies implemented in IMAGHarmony .
                     </p>
                     </div>
                     
