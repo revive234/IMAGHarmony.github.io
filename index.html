@@ -68,19 +68,23 @@
   <span class="author-block">
     <a href="https://muzishen.github.io/" target="_blank">Fei Shen</a> <sup>1</sup><br>
   </span>
+    <span class="author-block">
+   <a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ&hl=en" target="_blank">Xiaoyu Du</a> <sup>1</sup><br>
+  </span>
+    <span class="author-block">
+   <a href="" target="_blank">Yutong Gao</a> <sup>1</sup><br>
+  </span>
   <span class="author-block">
     <a href="" target="_blank">Jian Yu</a> <sup>1</sup><br>
   </span>
 
   <span class="author-block">
-    <a href="https://tenvence.github.io/" target="_blank">Cong Wang</a> <sup>2</sup><br>
+    <a href="" target="_blank">Yushe Cao</a> <sup>2</sup><br>
   </span>
   <span class="author-block">
-    <a href="https://scholar.google.com/citations?user=moDfIyoAAAAJ&hl=en" target="_blank">Xin Jiang</a> <sup>1</sup><br>
+    <a href="" target="_blank">Xing Lei</a> <sup>2</sup><br>
   </span>
-  <span class="author-block">
-   <a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ&hl=en" target="_blank">Xiaoyu Du</a> <sup>1</sup><br>
-  </span>
+
  
   <span class="author-block">
     <a href="https://scholar.google.com.hk/citations?user=ByBLlEwAAAAJ&hl=en" target="_blank">Jinhui Tang</a> <sup>1</sup><br>
@@ -260,9 +264,15 @@
                     </div>
                     <div class="content has-text-justified">
                     <p>
-                        Our framework comprises two components: a global appearance model (stage I) and a local enhancement model (stage II), which explicitly disentangle and jointly control the global appearance and local details under multi-conditional guidance, enabling accurate synthesis of garment silhouette, color, and logo placement.
-                        The global appearance model first generates a latent of coarse garment image conditioned on the textual prompt, garment silhouette, and color palette. 
-                        Subsequently, the local enhancement model refines this latent representation by integrating user-defined logo and spatial constraint, producing the final high-fidelity garment image with fine-grained controllability.
+                        To address the challenge of controlling object counts and spatial layouts in multi-object image editing, we propose IMAGHarmony, a dedicated framework for the QL-Edit task. As illustrated in Figure, IMAGHarmony is built upon the denoising UNet architecture of frozen Stable Diffusion XL (SDXL), and incorporates the proposed harmony-aware attention (HA). 
+                Additionally, we present a preference-guided noise selection (PNS) strategy at inference time to enhance structural stability and semantic consistency.
+                Specifically, during training, we first generate multiple initial noise seeds and use SDXL to perform denoising conditioned on the given textual prompt, producing a set of candidate images. 
+                These candidates are then evaluated by a frozen vision-language model (VLM) for semantic alignment, and the top-$k$ scoring images along with their corresponding seeds are selected for further processing. 
+                The auxiliary text and source image are respectively encoded using frozen text and image encoders to extract conditional text and visual features, which are then fed into the HA module  to obtain harmony feature that explicitly model object count and implicitly capture layout.
+                Subsequently, a learnable IP attention layer is inserted into the "Down4" block of the UNet to inject the harmony feature. 
+                To preserve the generative capability of the original model, we additionally apply cross-attention using a \texttt{“< Null Prompt >”} over the frozen UNet. 
+                During inference, we adopt the PNS strategy  to perform a few denoising steps on the candidate seeds, evaluate their semantic consistency, and ultimately select the optimal noise seed to conduct full denoising, resulting in high-quality edited images that align with the desired object count and spatial layout.
+                Finally, we provide a comprehensive summary of the training and inference strategies implemented in IMAGHarmony (Section \ref{sec:train}).
                     </p>
                     </div>
                     
@@ -278,7 +288,7 @@
                     <h2 class="title is-3">Example</h2>
                     
                     <div class="container is-max-desktop">
-                        <img src="./static/images/introductionv3.png" alt="Image0" style="width: 100%;">
+                        <img src="./static/images/sotacompv1.png" alt="Image0" style="width: 100%;">
                     </div>
                 </div>
             </div>
