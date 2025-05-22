@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>IMAGDressing</title>
+  <title>IMAGHarmony</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,7 +53,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
 		            <h1 class="title is-size-2 publication-title">
-                        IMAGGarment-1: Fine-Grained Garment Generation for Controllable Fashion Design                        
+                        IMAGHarmony: Controllable Image Editing with Consistent Object Quantity and Layout
+                        
           </h1>
 
 <!--            <div class="is-size-5 publication-authors">-->
@@ -129,7 +130,7 @@
                     <!-- Supplementary PDF link -->
 			
                     <span class="link-block">
-                      <a href="https://github.com/muzishen/IMAGGarment-1" target="_blank"
+                      <a href="https://github.com/muzishen/IMAGHarmony" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -196,14 +197,14 @@
 
           <div class="content has-text-justified">
             <p>
-                This paper presents IMAGGarment-1, a fine-grained garment generation (FGG) framework that enables high-fidelity garment synthesis with precise control over silhouette, color, and logo placement. 
-                Unlike existing methods that are limited to single-condition inputs, IMAGGarment-1 addresses the challenges of multi-conditional controllability in personalized fashion design and digital apparel applications.
-                Specifically, IMAGGarment-1 employs a two-stage training strategy to separately model global appearance and local details, while enabling unified and controllable generation through end-to-end inference.
-                In the first stage, we propose a global appearance model that jointly encodes silhouette and color using a mixed attention module and a color adapter.
-                In the second stage, we present a local enhancement model with an adaptive appearance-aware module to inject user-defined logos and spatial constraints, enabling accurate placement and visual consistency.
-                To support this task, we release GarmentBench, a large-scale dataset comprising over 180K garment samples paired with multi-level design conditions, including sketches, color references, logo placements, and textual prompts. 
-                Extensive experiments demonstrate that our method outperforms existing baselines, achieving superior structural stability, color fidelity, and local controllability performance. 
-              The code and model will be available at <a href="https://github.com/muzishen/IMAGGarment-1" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment-1</a>.
+                Recent diffusion models have advanced image editing by enhancing visual quality and control, supporting broad applications across creative and personalized domains. However, current image editing largely overlooks multi-object scenarios, where precise control over object categories, counts, and spatial layouts remains a significant challenge.
+                To address this, we introduce a new task, quantity-and-layout consistent image editing (QL-Edit), which aims to enable fine-grained control of object quantity and spatial structure in complex scenes. 
+                We further propose IMAGHarmony, a structure-aware framework that incorporates harmony-aware attention (HA) to integrate multimodal semantics, explicitly modeling object counts and layouts to enhance editing accuracy and structural consistency.
+                In addition, we observe that diffusion models are susceptible to initial noise and exhibit strong preferences for specific noise patterns. 
+                Motivated by this, we present a preference-guided noise selection (PNS) strategy that chooses semantically aligned initial noise samples based on vision-language matching, thereby improving generation stability and layout consistency in multi-object editing.
+                To support evaluation, we construct HarmonyBench, a comprehensive benchmark covering diverse quantity and layout control scenarios.
+                Extensive experiments demonstrate that IMAGHarmony consistently outperforms state-of-the-art methods in structural alignment and semantic accuracy.
+                Code, models, and datasets will be publicly released.
             </p>
             </p>
           </div>
@@ -255,7 +256,7 @@
                         </ul>
                     </div> -->
                     <div class="container is-max-desktop">
-                        <img src="./static/images/architecture.png" alt="Image0" style="width: 100%;">
+                        <img src="./static/images/framework.png" alt="Image0" style="width: 100%;">
                     </div>
                     <div class="content has-text-justified">
                     <p>
