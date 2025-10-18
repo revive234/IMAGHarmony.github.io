@@ -192,14 +192,15 @@
 
           <div class="content has-text-justified">
             <p>
-                Recent diffusion models have advanced image editing by enhancing visual quality and control, supporting broad applications across creative and personalized domains. However, current image editing largely overlooks multi-object scenarios, where precise control over object categories, counts, and spatial layouts remains a significant challenge.
-                To address this, we introduce a new task, quantity-and-layout consistent image editing (QL-Edit), which aims to enable fine-grained control of object quantity and spatial structure in complex scenes. 
-                We further propose IMAGHarmony, a structure-aware framework that incorporates harmony-aware attention (HA) to integrate multimodal semantics, explicitly modeling object counts and layouts to enhance editing accuracy and structural consistency.
-                In addition, we observe that diffusion models are susceptible to initial noise and exhibit strong preferences for specific noise patterns. 
-                Motivated by this, we present a preference-guided noise selection (PNS) strategy that chooses semantically aligned initial noise samples based on vision-language matching, thereby improving generation stability and layout consistency in multi-object editing.
-                To support evaluation, we construct HarmonyBench, a comprehensive benchmark covering diverse quantity and layout control scenarios.
-                Extensive experiments demonstrate that IMAGHarmony consistently outperforms state-of-the-art methods in structural alignment and semantic accuracy.
-                Code, models, and datasets will be publicly released.
+                Recent diffusion models have advanced image editing by improving fidelity and controllability across creative and personalized applications. 
+                However, multi-object scenes remain challenging, as reliable control over object categories, counts, and spatial layout is difficult to achieve.
+                For that, we first study quantity and layout consistent image editing, abbreviated as QL-Edit, which targets control of object quantity and spatial layout in multi-object scenes. 
+                Then, we present IMAGHarmony, a straightforward framework featuring a plug-and-play harmony aware (HA) module that fuses perception semantics while modeling object counts and locations, resulting in accurate edits and strong structural consistency.
+                We further observe that diffusion models are sensitive to the choice of initial noise and tend to prefer certain noise patterns. 
+                Based on this finding, we present a preference-guided noise selection (PNS) strategy that selects semantically aligned initial noise through vision and language matching, thereby further improving generation stability and layout consistency in multiple object editing. 
+                To support evaluation, we develop HarmonyBench, a comprehensive benchmark that covers a diverse range of quantity and layout control scenarios. 
+                Extensive experiments demonstrate that IMAGHarmony outperforms prior methods in both structural alignment and semantic accuracy, utilizing only 200 training images and 10.6M of trainable parameters.
+                Code, models, and data are available at https://github.com/muzishen/IMAGHarmony.
             </p>
             </p>
           </div>
